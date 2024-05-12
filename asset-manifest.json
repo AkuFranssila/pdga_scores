@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pdga_scores/static/css/main.e6c13ad2.css",
+    "main.js": "/pdga_scores/static/js/main.928fffeb.js",
+    "static/js/488.3702d841.chunk.js": "/pdga_scores/static/js/488.3702d841.chunk.js",
+    "index.html": "/pdga_scores/index.html",
+    "main.e6c13ad2.css.map": "/pdga_scores/static/css/main.e6c13ad2.css.map",
+    "main.928fffeb.js.map": "/pdga_scores/static/js/main.928fffeb.js.map",
+    "488.3702d841.chunk.js.map": "/pdga_scores/static/js/488.3702d841.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.928fffeb.js"
+  ]
+}
