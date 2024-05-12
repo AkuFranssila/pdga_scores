@@ -28,7 +28,9 @@ export function GroupScorecard(props: GroupScorecardProps) {
   // Hole units
   const holeUnits = layout?.Units || "ft";
 
-  const headerTitle = `Card ${props.cardNumber} - ${groupPlayerScores[0].TeeTime}`;
+  const roundNumber = groupPlayerScores[0].Round;
+
+  const headerTitle = `Round ${roundNumber} - Card ${props.cardNumber} - ${groupPlayerScores[0].TeeTime}`;
 
   const sortedGroupPlayerScores = groupPlayerScores.sort(
     (a, b) => a.RunningPlace - b.RunningPlace
