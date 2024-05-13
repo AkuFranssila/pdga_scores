@@ -30,7 +30,7 @@ export function TournamentList(props: TournamentListProps) {
         <Grid item xs={12} flexDirection={"column"}>
           <Grid container spacing={2}>
             {tournaments.map((tournament) => (
-              <Grid item key={tournament.PdgaNumber} xs={6}>
+              <Grid item key={tournament.PdgaNumber} xs={12} md={6} xl={6}>
                 <TournamentCard
                   key={tournament.PdgaNumber}
                   tournamentId={tournament.PdgaNumber}

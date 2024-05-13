@@ -28,7 +28,7 @@ export function BaseTable(props: BaseTableProps) {
     console.log(player);
     const row: { [key: string]: any } = {
       // Update the type of 'row' to include dynamic keys
-      id: player.PDGANum,
+      id: player.PDGANum || player.Name,
       position: player.Tied ? `T${player.RunningPlace}` : player.RunningPlace,
       name: player.Name,
     };

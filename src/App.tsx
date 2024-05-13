@@ -5,7 +5,7 @@ import { TournamentView } from "./pages/TournamentView";
 export default function App() {
   return (
     <Routes>
-      <Route path="" element={<TournamentView />} />
+      <Route path="/" element={<TournamentView />} />
       <Route
         path="/tournament/:tournamentId"
         element={<TournamentScoresPages />}

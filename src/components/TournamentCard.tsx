@@ -59,7 +59,7 @@ export function TournamentCard(props: TournamentCardProps) {
             paddingLeft: 1.5,
           }}
         >
-          <Button size="small" href={`/tournament/${tournamentId}`}>
+          <Button size="small" href={`#/tournament/${tournamentId}`}>
             Scores
           </Button>
           <Button size="small" href={livestreamUrl} target="_blank">

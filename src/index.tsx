@@ -5,14 +5,18 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 import { TournamentView } from "./pages/TournamentView";
 import { TournamentScoresPages } from "./pages/TournamentScoresPage";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement!);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/*",
     element: <TournamentView />,

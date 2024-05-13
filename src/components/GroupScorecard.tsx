@@ -55,12 +55,14 @@ export function GroupScorecard(props: GroupScorecardProps) {
     >
       <Grid container>
         <Grid item xs={10} paddingTop={5} paddingBottom={5}>
-          <BaseTable
-            data={sortedGroupPlayerScores}
-            holeDetails={layout?.Detail || []}
-            holeUnits={holeUnits}
-            headerTitle={headerTitle}
-          />
+          {sortedGroupPlayerScores && sortedGroupPlayerScores.length > 0 && (
+            <BaseTable
+              data={sortedGroupPlayerScores}
+              holeDetails={layout?.Detail || []}
+              holeUnits={holeUnits}
+              headerTitle={headerTitle}
+            />
+          )}
           {/* {groupPlayerScores.map((player) => (
           <PlayerScorecard key={player.PDGANum} playerScores={player} />
         ))} */}
